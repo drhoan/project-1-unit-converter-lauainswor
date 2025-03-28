@@ -1,5 +1,5 @@
 x = float(input("1)Temperature 2)Weight 3)Distance: 0)Quit: "))
-while x != 0:
+while True:
         if x == 1:
             tempF = float(input("Enter the temperature in Fahrenheit: "))
             print(f"The temperature in celcius is {(tempF - 32) * 5//9}")
@@ -12,6 +12,8 @@ while x != 0:
             miles = float(input("Enter the distance in Miles: "))
             print(f"The distance in Kilometers is {miles * 1.6}")
             x = (input("1)Temperature 2)Weight 3)Distance: 0)Quit: "))
+        if x == 0:
+            break
 print("Have a nice day!")
 
 
